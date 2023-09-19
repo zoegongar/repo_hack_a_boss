@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Registro al Evento de Desarrollo Web</title>
+
+    <!-- Ignorar CSS, solo para separar los campos - No modificar -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #333;
+      }
+
+      form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      label,
+      legend {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #666;
+      }
+
+      fieldset,
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2rem 0;
+      }
+
+      div > input {
+        width: 20px;
+      }
+
+      input,
+      button {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        border: none;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Registro al Evento de Desarrollo Web</h1>
+    <form>
+
+      <!-- input para el nombre: name="nombre", requerido -->
+      <label for="name" >Nombre</label>
+      <input type="text" id="name" name="nombre" required>
+
+
+      <!-- input para email: name="email", requerido -->
+      <label for="e-mail" >Email</label>
+      <input type="text" id="e-mail" name="email" required>
+
+      <!-- input para la URL de la página web del inscrito: name="website", debe ser una web válida-->
+      <label for="web_site" >Email</label>
+      <input type="url" id="web_site" name="website" required>
+
+      <!-- input para el número de teléfono: name="phone", debe mostrar el teclado numérico en dispositivos móviles -->
+      <label for="phone_number" >Teléfono</label>
+      <input type="tel" id="phone_number" name="phone" required>
+
+      <!-- input número para cantidad de tickets: name="tickets", los valores admintidos deben estar entre mínimo 1 y máximo 5, requerido -->
+      <label for="number_tickets" >Número de tickets</label>
+      <input type="number" id="number_tickets" name="tickets" min="1" max="5" required>
+
+      <!-- input de hora para la hora de llegada: name="time", requerido -->
+      <label for="hora_llegada" >Hora de llegada</label>
+      <input type="time" id="hora_llegada" name="hora" required>
+
+      <!-- input oculto para enviar un valor específico: name="registry", value="event_registry" -->
+      <input type="text" name="registry" value="event_registry" hidden>
+
+
+      <!-- input para la contraseña del usuario: name="password", requerida -->
+      <label for="pass">Contraseña</label>
+      <input type="password" id="pass" name="password" required>
+
+      <div>
+      <!-- Checkbox para optar por recibir actualizaciones por correo electrónico: name="updates", por defecto activada -->
+      <!-- He elegido un radio, porque con el checkbox se pueden marcar mas de una opción y no veo qué sentido 
+        puede tener que pueda decir sí y no al mismo tiempo.-->
+        <label>¿Quieres recibir nuestras actualizaciones?</label>
+        <input type="radio" id="updates_yes" name="updates" value="true" checked>
+        <label for="updates_yes">Sí</label>
+        <input type="radio" id="updates_no" name="updates" value="false">
+        <label for="updates_no">No</label>       
+      </div>
+
+      <fieldset>
+        <legend>Color de la Camiseta:</legend>
+       <!-- Botones de opción para seleccionar el color de la camiseta: name="t-shirt", colores disponibles (blue, black, orange) -->
+       <!-- He elegido un radio, porque con el checkbox se pueden marcar mas de una opción y no veo qué sentido 
+        puede tener que pueda elegir más de un color para una camiseta, si la camiseta es de un color.-->
+       
+        <label for="color_blue">rojo</label>
+        <input type="checkbox" id="color_blue" name="color" value="blue" >
+       
+        <label for="color_black">Negra</label>       
+        <input type="checkbox" id="color_black" name="color" value="black">
+       
+        <label for="color_orange">Naranja</label>       
+        <input type="checkbox" id="color_orange" name="color" value="orange">
+    </fieldset>
+
+
+      <!-- Campo de archivo para cargar la foto de perfil: name="photo" -->
+      <label for="photo_perfil">Elige una foto para mostrar en tu perfil</label>
+      <input type="file" id="photo_perfil" name="photo">
+
+      <!-- Botón para enviar el formulario -->
+      <input type="submit" value="Submit">
+
+    </form>
+  </body>
+</html>
