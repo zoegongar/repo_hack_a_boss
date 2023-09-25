@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*id styles*/
+#intro { font-style: italic; 
+    font-size: 1.2rem;}
+
+#img_perfil_index_html { 
+    width: 200px; 
+    border: 4px solid orangered;
+    border-radius: 50%;   
+}
+
+#iframe_sound_garden_about{
+    border: 2px solid rgb(119, 18, 18);
+    border-radius: 10px;
+}
+
+#inicio{
+    background-image: url(/html/img/front_back.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#bg-inicio{
+    width: 50%;
+    border-radius: 10px;
+    color: antiquewhite;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#roma h3, #santorini h3, #paris h3 {
+    color: palevioletred;
+    background-color: gainsboro;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+
+
+/*classs styles*/
+
+.one-line{  
+    display:flex; 
+    align-items: baseline 
+}
+
+.listas {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 1rem;
+    min-width: 60%;
+}
+
+.button {
+    display:flex;
+    justify-content: space-between;
+    border: none;
+    width: 45%;
+    padding: 0.7rem;
+    color: whitesmoke;
+    background-color: #666;
+    font-size: 1rem;
+    border-radius: 5px; 
+}
+.button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+.cabecera-gris { color: grey; }
+
+/*target styles*/
+
+input, textarea {
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background-color: whitesmoke;
+
+
+}
+
+html {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background-color: plum;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+main{
+    background-color: whitesmoke;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: #333;
+    color: whitesmoke;
+    height: 4.5rem;
+    font-size: 1.4 rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 3rem;
+}
+
+li {
+    margin-left: 3rem;
+}
+
+address{
+    margin: 1rem;
+}
+
+fieldset{
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+li.sin {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul,form  ul{
+    list-style: none;
+}
+
+nav ul {
+    margin-right: 3rem;
+    display: flex;
+    gap: 20px;
+}
+
+nav menu {
+    padding: 0.5rem 1rem;
+}
+nav li:hover {
+    background-color: #555;
+    border-radius: 5px;
+
+}
+
+footer {
+    background-color: #333;
+    color: whitesmoke;
+    height: 2rem;
+    display: flex;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="/html/practicaCR/styles.css">
 </head>
 <body>
     <header>
@@ -70,10 +71,39 @@
                 </li>
                 <li>
                     <label for="date_birth">Fecha de nacimiento</label>
-                    <input type="date">
+                    <input type="date" name="date_birth" id="born_date">
+                </li>
+                <li>
+                    <label for="pass">Contraseña</label>
+                    <input type="password" name="pass" id="password">
+                </li>
+            
+                <li >
+                    <p>¿Quieres ser mi amiga?</p>
+                    <label for="friend" class="one-line">Sí</label>
+                    <input type="radio" name="friend" id="frien_yes" class="one-line" checked >
+                    <label for="friend" class="one-line">No</label>
+                    <input type="radio" name="friend" id="friend_no" class="one-line">
+                </li>
+                <li>
+                    <label for="food">¿Cuál es tú comida favorita?</label>
+                    <select name="food" id="favourite_food">
+                        <option value="Baba_ganoush">Baba ganoush</option>
+                        <option value="musaka">musaka</option>
+                        <option value="pastizzi" selected>pastizzi</option>
+                        <option value="hummus">hummus</option>
+                    </select>
                 </li>
             </ul>
-        </fieldset>                
+        </fieldset>
+        <ul>
+            <li class="button one-line">
+                <button type="submit">Submit</button> 
+            </li>
+            <li class="button one-line">
+                <button type="reset" >Reset</button>
+            </li>
+        </ul>
     </form>
     </main>           
     <footer>

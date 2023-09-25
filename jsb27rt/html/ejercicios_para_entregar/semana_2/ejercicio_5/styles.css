@@ -1,0 +1,27 @@
+
+
+/*Todos llevan dos selectores, el primero sirve para decir que sólo afecta a los elementos que están dentro 
+de section, el segundo dice a qué elemento de dentro del primer selector está*/
+/*El primer hijo es al 100% */
+section p:nth-child(1) {
+  background-color: rgba(255, 165, 0, 1);
+}
+/*El segundo hijo es al 80% */
+section p:nth-child(2) {
+  background-color: rgba(255, 165, 0, 0.8);
+}
+
+/*El tercer hijo es al 60% */
+section p:nth-child(3) {
+  background-color: rgba(255, 165, 0, 0.6);
+}
+
+/*El cuarto hijo es al 40% */
+section p:nth-child(4) {
+  background-color: rgba(255, 165, 0, 0.4);
+}
+
+/*El quinto hijo es al 20% */
+section p:nth-child(5) {
+  background-color: rgba(255, 165, 0, 0.2);
+}

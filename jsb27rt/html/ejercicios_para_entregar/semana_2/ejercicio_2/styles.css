@@ -1,0 +1,25 @@
+/* El encabezado principal debe tener color _verde_ y su texto centrado */
+h1{
+    color: green;
+    text-align: center;
+}
+
+/* El encabezado de segundo nivel debe tener color _rojo_ */
+h2{
+    color: red;
+}
+
+/* Los párrafos deben tener color azul */
+p{
+    color: blue;
+}
+
+/* El párrafo con id "unico" debe estar subrayado. */
+#unico{
+    text-decoration: underline;
+}
+
+/* Los elementos de lista con clase "destacado" deben estar en negrita. */
+.destacado{
+    font-weight: bold;
+}

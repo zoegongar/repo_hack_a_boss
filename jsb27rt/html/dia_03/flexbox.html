@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .children {
+            height: 100px;
+            display: inline-block;
+            width: 100px;
+        }
+        #container {
+            display: flex;
+            justify-content: space-evenly;
+            
+            align-items: center;
+        }
+        #first {
+            background-color: blue;
+        }
+        #second {
+            background-color: orange;
+            height: 170px;
+        }
+        #third {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <section id="first" class="children">
+
+        </section>
+
+        <section id="second" class="children">
+            
+        </section>
+
+        <section id="third" class="children">
+            
+        </section>
+    </section>    
+</body>
+</html>

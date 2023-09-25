@@ -1,0 +1,19 @@
+/* Este es un comentario CSS */
+
+body {
+  background-color: #f1f1f1;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size:24px;
+  color: #ff0000;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px
+}
