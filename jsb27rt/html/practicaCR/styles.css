@@ -5,7 +5,9 @@
 }
 /*id styles*/
 #intro { font-style: italic; 
-    font-size: 1.2rem;}
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
 
 #img_perfil_index_html { 
     width: 200px; 
@@ -32,6 +34,11 @@
     margin: auto;
     padding: 2rem;
     background-color: rgba(0,0,0,0.8);
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
 }
 
 #roma h3, #santorini h3, #paris h3 {
@@ -63,7 +70,7 @@
     display:flex;
     justify-content: space-between;
     border: none;
-    width: 45%;
+    width: 100%;
     padding: 0.7rem;
     color: whitesmoke;
     background-color: #666;
@@ -75,7 +82,18 @@
     cursor: pointer;
 }
 
-.cabecera-gris { color: grey; }
+.cabecera-gris { 
+    color: grey; 
+    font-size: 3rem;
+    padding: 1rem 2rem;
+}
+
+.pink_biger:hover{
+    color: rgb(255, 148, 159);
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 1000ms ease;
+}
 
 /*target styles*/
 
@@ -101,6 +119,7 @@ body {
     background-color: plum;
     max-width: 1200px;
     min-height: 100vh;
+    margin: 0 auto;
 }
 
 main{
@@ -120,6 +139,12 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+header:hover{
+    background-color: plum;
+    transition: background 1000ms ease;
+}
+
 
 header h1 {
     margin-left: 3rem;
@@ -175,3 +200,77 @@ footer {
     justify-content: center; 
     align-items: center;
 }
+
+/****************************************************************************************************************
+****************************************************************************************************************
+***                                                                                                          ***
+***                                           Media query                                                    ***
+***                                                                                                          ***
+****************************************************************************************************************
+***                                             General                                                      ***
+****************************************************************************************************************/
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+
+    header h1{
+        margin-left : 1rem;
+    }
+
+    nav ul{
+        margin-right:1rem;
+        gap: 10px;
+    }
+
+    main{
+        padding: 1rem;
+    }
+
+    iframe{
+        width: 90%;
+    }
+    .listas li{
+        margin-left: 1.5rem;
+    }
+
+}
+    /***************************************************************************************************************
+    ***                                             General                                                      ***
+    ****************************************************************************************************************/    
+@media screen and (min-height:500px) {
+    ifraem{
+        width: 60%;
+    }
+
+    #intro {
+        font-size: 1.5rem;
+        line-height: 1.8;
+    }
+
+    .cabecera-gris{
+        font-size: 2rem;
+    }
+
+    main{
+        justify-content: space-evenly;
+    }
+}
+    
+
+
+@media screen and (min-width: 0px) {
+
+    input[type=text], textarea{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+/*******************************************************************************************************
+                                   variables
+*******************************************************************************************************/
+html{
+    --backgroun_color: rgb(116, 116, 228,0.4);
+
+}
+/*******************************************************************************************************
+                               general y etiquetas
+*******************************************************************************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+header {
+    font-size: 1.75rem;
+    text-align: center;
+    background-color: var(--backgroun_color);
+    margin-left: 8rem;
+    margin-right: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+main{
+    margin-left: 8rem;
+    margin-right: 5rem;
+    
+} 
+
+ul{color: rgb(202, 103, 28);
+
+    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+/*******************************************************************************************************
+                               clases
+*******************************************************************************************************/
+
+.no_bullets {
+    list-style: none;
+}
+
+.libro {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    position: relative;
+    text-align: justify;
+}
+
+.not_visible{
+    visibility: collapse;
+    width: 10px;
+}
+
+.visible:hover {
+    visibility: collapse;
+}
+
+/*******************************************************************************************************
+                               id
+*******************************************************************************************************/
+
+#neurociencia_del_cuerpo{
+    background-image: url(/html/dia_05/img/neurociencia_del_cuerpo.webp);
+}
+
+#neurociencia_del_cuerpo:hover{
+    height: 400px;
+    width: 200px;
+    /* position: absolute;
+    z-index: -1; */
+}
+
+/* ul:hover {
+    visibility: collapse;
+} */
+
+/* #luces_y_mareas{
+
+    background-image: url(/html/dia_05/img/luces_y_mareas.gif);
+} */
+
+
+
+/* #luces_y_mareas:hover {
+    visibility: visible;
+    background-image: url(/html/dia_05/img/luces_y_mareas.gif);
+    height: 520px;
+    width: 120px;
+} */
+
+/* #debut{
+    background-image: url(/html/dia_05/img/christina-rosenvinge-libro-debut.jpg);
+} */
+
+/* #debut:hover {
+    visibility: visible;
+    background-image: url(/html/dia_05/img/christina-rosenvinge-libro-debut.jpg);
+    height: 520px;
+    width: 120px;
+}
+ */
+

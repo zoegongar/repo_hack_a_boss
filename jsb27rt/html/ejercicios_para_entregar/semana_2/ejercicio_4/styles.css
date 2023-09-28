@@ -17,12 +17,18 @@ a{
  
   
 }
-li:hover {
+.hijo:hover li {
   background-color: black;
   color: greenyellow;
 }
-.contain {
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  height: 100%;
+ /* align-items: stretch; */
 } 
+
+.hijo {
+  height: 25%;
+}
