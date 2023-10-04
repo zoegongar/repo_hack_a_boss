@@ -40,8 +40,7 @@ ul{color: rgb(202, 103, 28);
     margin-left: 4rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
-    position: absolute;
-    z-index: 2;
+    
 }
 
 
@@ -54,38 +53,47 @@ ul{color: rgb(202, 103, 28);
     list-style: none;
 }
 
-.libro {
+/* .img_libro {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
-    position: relative;
-    text-align: justify;
-}
+    opacity: 0.6;
 
-.not_visible{
-    visibility: collapse;
-    width: 10px;
+    max-width: 50%;
+    height: auto;
 }
-
-.visible:hover {
-    visibility: collapse;
-}
+ */
+/* .img_libro:hover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+} */
 
 /*******************************************************************************************************
                                id
 *******************************************************************************************************/
 
-#neurociencia_del_cuerpo{
-    background-image: url(/html/dia_05/img/neurociencia_del_cuerpo.webp);
+.neurociencia_del_cuerpo_img{
+    background-image: url(/html/dia_05/img/neurociencia-del-cuerpo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;
 }
 
-#neurociencia_del_cuerpo:hover{
-    height: 400px;
-    width: 200px;
-    /* position: absolute;
-    z-index: -1; */
+.neurociencia_del_cuerpo_img:hover{
+    background-image: url(/html/dia_05/img/neurociencia-del-cuerpo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
 }
+
+div:hover{
+    visibility: collapse;
+}
+
 
 /* ul:hover {
     visibility: collapse;
