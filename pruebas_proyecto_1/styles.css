@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.code-box {
+    padding: 10px;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+
+.color-boxes {
+    display: flex;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
